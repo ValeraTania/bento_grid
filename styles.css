@@ -1,0 +1,15 @@
+/*----- Fonts -----*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/*----- Variables -----*/
+:root{
+--purple100: hsl(254, 88%, 90%);
+--purple500: hsl(256, 67%, 59%);
+
+--yellow100: hsl(31, 66%, 93%)
+- Yellow 500: hsl(39, 100%, 71%)
+
+- White: hsl(0, 0%, 100%)
+- Black: hsl(0, 0%, 7%)
+
+}
