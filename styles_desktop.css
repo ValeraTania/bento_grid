@@ -1,0 +1,56 @@
+@media screen and (min-width:860px) {
+     .container{
+        display: grid;
+        align-items: start;
+        justify-items: center;
+        width: calc(var(--width)*8);
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,min-content);
+      /*  grid-template-areas: "createContent rating rating schedule--socialMedia"
+                             "createContent social schedule schedule--socialMedia"
+                             "content--ai audience follower follower"; */
+     }
+
+     .rating{
+       /* grid-area: rating; */
+        grid-column: 2/ span 4;
+     }
+
+     .social{
+        grid-area: social;
+        grid-column: 2;
+        grid-row: 2;
+     }
+
+     .createContent{
+      /* grid-area: createContent; */
+      grid-column: 1;
+      grid-row: 1;
+     }
+
+     .schedule--socialMedia{
+       /* grid-area: schedule--socialMedia; */
+       grid-column: 6;
+       grid-row: 1/2;
+     }
+
+     .content--ai{
+      /*  grid-area: content--ai; */
+      grid-column: 1;
+      grid-row: 2;
+
+     }
+
+     .audience{
+      /*  grid-area: audience; */
+      grid-column: 2;
+      grid-row: 3;
+     }
+
+     .follower{
+     /*   grid-area: follower;*/
+        flex-direction: row;
+        grid-column: 3/span 4;
+        grid-row: 3;
+     }
+}

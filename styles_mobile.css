@@ -1,0 +1,114 @@
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: var(--align_center);
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card{
+    border-radius: 0.5rem;
+    width: calc(var(--width)*8);
+    padding: 1rem;
+    display: flex;
+    align-items: var(--align_center);
+    flex-direction: column;
+}
+
+.rating,.follower{
+    background: var(--purple500);
+    color: var(--white);
+    text-align: var(--align_center);
+}
+
+.rating img,.follower img {
+    width: calc(var(--width)*5);
+}
+
+.follower h2{
+    width: calc(var(--width)*6);
+}
+
+.social,.audience{
+    background: var(--white);
+}
+
+.social img,.schedule--socialMedia img{
+    width: calc(var(--width)*10);
+}
+
+.schedule,.content--ai{
+    background: var(--yellow500);
+}
+
+.schedule img{
+    width: calc(var(--width)*7);
+    position: relative;
+    right: 3rem;
+    top: 1rem;
+
+}
+
+.audience{
+    align-items: var(--align_left);
+}
+
+.audience span{
+    font-size: 3rem;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.schedule--socialMedia{
+    background: var(--purple100);
+}
+
+
+.schedule--socialMedia h2, .schedule--socialMedia p{
+    width: calc(var(--width)*9);
+    text-align: var(--align_center);
+}
+
+.createContent{
+    background: var(--yellow100);
+    align-items: var(--align_left);
+
+}
+
+.createContent i{
+    color: var(--purple500);
+}
+
+.createContent img,.audience img{
+    align-items: var(--align_left);
+    width: calc(var(--width)*7);
+}
+
+.content--ai img{
+    width: calc(var(--width)*7);
+    position: relative;
+    right: 3rem;
+}
+
+h1{
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+h2{
+    font-weight: 500;
+}
+
+span{
+    color: var(--yellow500);
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); }

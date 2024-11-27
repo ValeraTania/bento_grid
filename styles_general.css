@@ -1,0 +1,31 @@
+/*----- Fonts -----*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/*----- Variables -----*/
+:root{
+--purple100: hsl(254, 88%, 90%);
+--purple500: hsl(256, 67%, 59%);
+
+--yellow100: hsl(31, 66%, 93%);
+--yellow500: hsl(39, 100%, 71%);
+
+--white: hsl(0, 0%, 100%);
+--black: hsl(0, 0%, 7%);
+
+--width:10%;
+--align_center: center;
+--align_left: left;
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    background: #f7f5f5;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
