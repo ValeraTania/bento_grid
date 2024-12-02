@@ -1,22 +1,4 @@
 
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: var(--align_center);
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.card{
-    border-radius: 0.5rem;
-    width: calc(var(--width)*8);
-    padding: 1rem;
-    display: flex;
-    align-items: var(--align_center);
-    flex-direction: column;
-}
-
 .rating,.follower{
     background: var(--purple500);
     color: var(--white);

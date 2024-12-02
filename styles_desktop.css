@@ -1,56 +1,77 @@
-@media screen and (min-width:860px) {
+@media screen and (min-width:760px) {
      .container{
         display: grid;
-        align-items: start;
-        justify-items: center;
+        gap: 1rem;
+        align-items: stretch;
+        justify-content: center;
         width: calc(var(--width)*8);
+        height: 100vh;
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(3,min-content);
-      /*  grid-template-areas: "createContent rating rating schedule--socialMedia"
-                             "createContent social schedule schedule--socialMedia"
-                             "content--ai audience follower follower"; */
+        grid-template-rows:  0.4fr 0.1fr 0.3fr 0.4fr; 
+        grid-template-areas: "createContent rating rating schedule--socialMedia"
+                              "createContent social schedule schedule--socialMedia"
+                              "content--ai social schedule schedule--socialMedia"
+                              "content--ai audience follower follower"; 
+     }
+/*repeat(2, 0.3fr 0.4fr);*/
+     .rating{
+       grid-area: rating;
+
      }
 
-     .rating{
-       /* grid-area: rating; */
-        grid-column: 2/ span 4;
-     }
 
      .social{
+        overflow: hidden;
         grid-area: social;
-        grid-column: 2;
-        grid-row: 2;
+        justify-content: start;
      }
+
+     .social img{
+      width: calc(var(--width)*14);
+      position: relative;
+      left: 1.8em;
+   }
 
      .createContent{
-      /* grid-area: createContent; */
-      grid-column: 1;
-      grid-row: 1;
+         grid-area: createContent;
      }
 
-     .schedule--socialMedia{
-       /* grid-area: schedule--socialMedia; */
-       grid-column: 6;
-       grid-row: 1/2;
+     .schedule--socialMedia {
+       align-items: var(--align_left);
+       overflow: hidden;
+       grid-area: schedule--socialMedia;
+     }
+
+     .schedule--socialMedia p, .schedule--socialMedia h2{
+      text-align: var(--align_left);
+     }
+
+     .schedule--socialMedia img {
+         width: calc(var(--width)*15);
+     }
+
+     .schedule{
+      grid-area: schedule;
+      overflow: hidden;
+      justify-content: start;
      }
 
      .content--ai{
-      /*  grid-area: content--ai; */
-      grid-column: 1;
-      grid-row: 2;
+        grid-area: content--ai
+     }
 
+     .content--ai img, .schedule img{
+      width: calc(var(--width)*10);
+      left: 0;
+      
      }
 
      .audience{
-      /*  grid-area: audience; */
-      grid-column: 2;
-      grid-row: 3;
+        grid-area: audience;
      }
 
      .follower{
-     /*   grid-area: follower;*/
         flex-direction: row;
-        grid-column: 3/span 4;
-        grid-row: 3;
+        grid-area: follower;
      }
 }
