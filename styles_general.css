@@ -17,37 +17,41 @@
 --align_left: left;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
     font-family: 'DM Sans', sans-serif;
     background: #f7f5f5;
     font-size: 18px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: var(--align_center);
+    align-items: var(--align_center);
     flex-direction: column;
-    
+    min-height: 100vh;
 }
 
 
 .container{
     display: grid;
     grid-template-columns: 1fr;
+    place-items: var(--align_center);
     justify-content: var(--align_center);
-    align-items: var(--align_center);
     gap: 1rem;
+    width: 90%;
 }
 
 .card{
     border-radius: 0.5rem;
-    width: calc(var(--width)*8);
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
     align-items: var(--align_center);
     flex-direction: column;
     justify-content: var(--align_center);
+    gap: 8px;
+    width: clamp(150px, 100%);
 
 }

@@ -25,13 +25,6 @@
     background: var(--yellow500);
 }
 
-.schedule img{
-    width: calc(var(--width)*7);
-    position: relative;
-    right: 3rem;
-    top: 1rem;
-
-}
 
 .audience{
     align-items: var(--align_left);
@@ -45,13 +38,10 @@
 
 .schedule--socialMedia{
     background: var(--purple100);
-}
-
-
-.schedule--socialMedia h2, .schedule--socialMedia p{
-    width: calc(var(--width)*9);
     text-align: var(--align_center);
+
 }
+
 
 .createContent{
     background: var(--yellow100);
@@ -68,11 +58,6 @@
     width: calc(var(--width)*7);
 }
 
-.content--ai img{
-    width: calc(var(--width)*7);
-    position: relative;
-    right: 3rem;
-}
 
 h1{
     font-weight: 500;
@@ -94,3 +79,5 @@ span{
 
 .attribution a { 
     color: hsl(228, 45%, 44%); }
+
+   

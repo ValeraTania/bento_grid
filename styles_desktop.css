@@ -1,21 +1,24 @@
 @media screen and (min-width:760px) {
      .container{
-        display: grid;
-        gap: 1rem;
-        align-items: stretch;
-        justify-items: center;
-        width: calc(var(--width)*8);
-        height: 100vh;
+        align-items: stretch; 
+        width: calc(var(--width)*7);
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows:  0.4fr 0.1fr 0.3fr 0.4fr; 
+        grid-template-rows:  0.3fr 0.4fr 0.45fr 0.3fr; 
         grid-template-areas: "createContent rating rating schedule--socialMedia"
                               "createContent social schedule schedule--socialMedia"
                               "content--ai social schedule schedule--socialMedia"
                               "content--ai audience follower follower"; 
      }
 
+     .card{
+      width: clamp(150px, 100%, 250px);
+
+     }
+
      .rating{
        grid-area: rating;
+       width: clamp(250px, 100%, 545px);
+
 
      }
 
@@ -40,11 +43,9 @@
        align-items: var(--align_left);
        overflow: hidden;
        grid-area: schedule--socialMedia;
+       text-align: var(--align_left);
      }
 
-     .schedule--socialMedia p, .schedule--socialMedia h2{
-      text-align: var(--align_left);
-     }
 
      .schedule--socialMedia img {
          width: calc(var(--width)*15);
@@ -62,7 +63,6 @@
 
      .content--ai img, .schedule img{
       width: calc(var(--width)*10);
-      left: 0;
       
      }
 
@@ -73,5 +73,8 @@
      .follower{
         flex-direction: row;
         grid-area: follower;
+        width: clamp(250px, 100%, 545px);
+        text-align: var(--align_left);
+
      }
 }
